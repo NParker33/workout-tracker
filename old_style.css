@@ -1,0 +1,94 @@
+/*
+Styling considerations:
+    - Default view of workouts should be a list of collapsed workouts
+    - Workout will expand upon selection
+    - 
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  font-size: 13px;
+}
+
+body {
+  min-height: 100vh;
+  background: #ddd;
+}
+
+.page-header {
+  background: #ccc;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn--new-workout {
+  height: 40px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 50vw;
+}
+
+.workouts {
+  background: #bbb;
+}
+
+.workouts__workout {
+  display: flex;
+  flex-direction: column;
+}
+
+.workouts__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.workouts__title h1 {
+  font-size: 1.2rem;
+}
+
+.workouts__workout {
+  background: #aaa;
+  padding: 15px;
+}
+
+.workouts__exercise {
+  background: #999;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.workouts__stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-left: auto;
+  width: 50%;
+}
+
+.workouts__stats p:first-child {
+  font-weight: 700;
+}
+
+.btn--collapse {
+  border: none;
+  background: none;
+  text-decoration: underline;
+  color: #00f;
+  margin-left: auto;
+  margin-right: 5px;
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+:root {
+  /* Custom Colors */
+  --cc-primary: hsl(266, 89%, 53%);
+  --cc-secondary: hsl(86, 89%, 53%);
+  --cc-background: hsl(266, 89%, 98%);
+  --cc-primary-txt: hsl(266, 89%, 10%);
+
+  /* Shades/tints */
+  --cc-primary-dk: hsl(266, 89%, 43%);
+  --cc-primary-lt: hsl(266, 89%, 63%);
+  --cc-secondary-dk: hsl(86, 89%, 43%);
+  --cc-secondary-lt: hsl(86, 89%, 63%);
+
+  --ff-main: "Montserrat", sans-serif;
+  --fw-lt: 300;
+  --fw-reg: 400;
+  --fw-med: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+}
+
+/* reset defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-semi);
+  color: var(--cc-primary-txt);
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+body {
+  background: var(--cc-background);
+  min-height: 100vh;
+  padding: 35px 20px;
+}
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  background: var(--cc-primary);
+  color: hsl(267, 82%, 98%);
+  cursor: pointer;
+}
+
+.btn--secondary {
+  background: var(--cc-secondary);
+  color: hsl(267, 88%, 20%);
+}
+
+/* Page Header */
+.page-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.page-header__buttons {
+  display: flex;
+  flex-direction: column;
+  align-self: end;
+  margin: 20px 0;
+}
+
+.page-header__buttons > .btn {
+  margin: 5px;
+  padding: 8px 16px;
+}
+
+/* Workouts Container */
+.workouts-container {
+  /*   background: #ddd; */
+  display: flex;
+  flex-direction: column;
+}
+
+.workouts__workout {
+  background: #fff;
+  margin: 15px auto;
+  padding: 25px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  align-items: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.workouts__workout,
+.workouts__workout h2 {
+  color: var(--cc-primary-txt);
+}
+
+.workout__type {
+  font-size: 1rem;
+  font-weight: var(--fw-reg);
+}
